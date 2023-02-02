@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class bj2884 {
+public class bj2884 { //
 
 	public static void main(String args[]) throws IOException {
 		
