@@ -7,21 +7,23 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class bj10952 {
+public class bj10951 {
 
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		int answer = 0;
-		while (true) {
-			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        String text;
+		StringTokenizer st;
+		while((text=br.readLine())!=null){ 
+			st = new StringTokenizer(text, " ");
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			if (a==0 || b==0) {break;}
-			answer = a+b;
-			bw.write(String.valueOf(answer)+"\n");
+			int sum = a+b;
+			bw.write(sum+"\n");
 		}
-	bw.flush();
+		bw.flush();
+		bw.close();
+		br.close();
 	}
 }
