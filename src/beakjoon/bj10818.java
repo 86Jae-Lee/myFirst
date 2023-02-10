@@ -16,12 +16,12 @@ public class bj10818 {
         int caseNum = Integer.parseInt(br.readLine());
         String str1 = br.readLine();
         String[] str2 = str1.split(" ");
-        ArrayList<String> list = new ArrayList<String>();
-        for(int i=0 ; i<caseNum ; i++) {
-        	list.add(str2[i]);
+        
+        ArrayList<Integer> list = new ArrayList<Integer>(caseNum);
+        for (int i=0 ; i<caseNum ; i++) {
+        	list.add(Integer.parseInt(str2[i]));
         }
         Collections.sort(list);
-        
         bw.write(list.get(0)+" "+list.get(caseNum-1));
         bw.flush();
 	}
