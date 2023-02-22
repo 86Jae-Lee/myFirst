@@ -1,26 +1,21 @@
 package beakjoon;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class bj11382 {
 
 	public static void main(String[] args) throws IOException {
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		Scanner sc1 = new Scanner(System.in);
 		long a,b,c;
-		a = Integer.parseInt(st.nextToken());
-		b = Integer.parseInt(st.nextToken());
-		c = Integer.parseInt(st.nextToken());
+		a = sc1.nextLong();
+		b = sc1.nextLong();
+		c = sc1.nextLong();
 		long result = a+b+c;
 		bw.write(String.valueOf(result));
 		bw.flush();
 	}
-
 }
