@@ -7,24 +7,20 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class bj2869 {
+public class bj11382 {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st1 = new StringTokenizer(br.readLine(), " ");
-		
-		long move = Integer.parseInt(st1.nextToken());
-		long reduce = Integer.parseInt(st1.nextToken());
-		long height = Integer.parseInt(st1.nextToken());
-		height -= move;
-		move -= reduce;
-		long result = (int)Math.ceil((double)height/move) + 1;
-		bw.write(result + "\n");
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+		long a,b,c;
+		a = Integer.parseInt(st.nextToken());
+		b = Integer.parseInt(st.nextToken());
+		c = Integer.parseInt(st.nextToken());
+		long result = a+b+c;
+		bw.write(String.valueOf(result));
 		bw.flush();
-		bw.close();
-		br.close();
-		
 	}
+
 }
