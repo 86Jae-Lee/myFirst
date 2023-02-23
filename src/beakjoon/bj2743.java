@@ -5,25 +5,17 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
 
-public class bj10951 {
+public class bj2743 {
 
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        String text;
-		StringTokenizer st;
-		while((text=br.readLine())!=null){ 
-			st = new StringTokenizer(text, " ");
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			int sum = a+b;
-			bw.write(sum+"\n");
-		}
+		
+		String str = br.readLine();
+		int i = str.length();
+		bw.write(String.valueOf(i));
 		bw.flush();
-		bw.close();
-		br.close();
 	}
 }
