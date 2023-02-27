@@ -18,6 +18,9 @@ public class bj10810 {
 		int M = Integer.parseInt(st.nextToken());
 		
 		int numLine[] = new int[N];
+		for (int i=0 ; i<N ; i++) {
+			numLine[i] = 0; 
+		}
 		
 		for (int i=0 ; i<M ; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
